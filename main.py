@@ -7,6 +7,9 @@ def main():
     
     global name2
     name2 = input("Player 2, what is your name? \n")
+    while name2 == name1:
+      print("\nPlayer names must be different")
+      name2 = input("Player 2, what is your real name? \n")
     print(f"\nHello {name2}!")
     
     # Definitions
@@ -104,7 +107,8 @@ def main():
         # Print winner and end game if winner is found
         if winner == True:
             print(f"\n{current_player} wins!")
-            return
+            print("Let's play again!\n")
+            main()
         else:
             current_player = change_player(current_player)
         

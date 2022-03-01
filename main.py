@@ -54,8 +54,7 @@ def main():
         for column in range(board_size):
             BOARD[column].append(u"\U000026AA")
     
-    display_board()
-        
+    display_board()  
     current_player = name1
     
     while True:

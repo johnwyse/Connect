@@ -117,7 +117,8 @@ def main():
                 break
                     
             print("Tie Game!")
-            return
+            print("Let's play again!\n")
+            main()
 
 
 # Prints out the current board
